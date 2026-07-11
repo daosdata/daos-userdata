@@ -1,0 +1,10 @@
+{
+  "hello": {
+    "description": "Say hello",
+    "help": "Prints a friendly greeting message to the console",
+    "steps": [
+      { "message": "Hello there!" },
+      { "quit": 0 }
+    ]
+  }
+}
