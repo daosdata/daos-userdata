@@ -10,6 +10,7 @@
                 "apps-dir": "${distro-home}/.software",
                 "dagatewayurl": "https://gateway1.tresss.eu.org/api",
                 "system_rack": "daos",
+                "profile_table": "ffprofile",
                 "carun_rack": "dacommands",
                 "carun_table": "commands"
                 }
