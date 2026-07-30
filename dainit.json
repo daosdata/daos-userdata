@@ -12,7 +12,8 @@
                 "system_rack": "daos",
                 "profile_table": "ffprofile",
                 "carun_rack": "dacommands",
-                "carun_table": "commands"
+                "carun_table": "commands",
+                "data_rack": "dadata"
                 }
             ]
         },
