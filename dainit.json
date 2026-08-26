@@ -170,7 +170,7 @@
                 {
                     "if": { "var-eq": { "key": "hardware_id", "value": "710167f6-7bd5-11eb-80ec-38f3ab074b11" } },
                     "path": "/etc/asound.conf",
-                    "content": "defaults.pcm.card 1\ndefaults.ctl.card 1\n\npcm.!default {\n    type hw\n    card 1\n}\n\nctl.!default {\n    type hw\n    card 1\n}\n",
+                    "content": "defaults.pcm.card 1\ndefaults.ctl.card 1\n\npcm.!default {\n    type plug\n    slave.pcm \"dmix:1,0\"\n}\n\nctl.!default {\n    type hw\n    card 1\n}",
                     "mode": "644",
                     "if-exists": "rewrite"
                 }
