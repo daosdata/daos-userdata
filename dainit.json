@@ -163,6 +163,18 @@
                 { "cmd": "chown", "args": ["-H", "-R", "1000:1000", "/home/daos/"] },
                 { "cmd": "chown", "args": ["-R", "1000:1000", "/home/da/"] }
             ]
+        },
+        {
+            "type": "file",
+            "list": [
+                {
+                    "if": { "var-eq": { "key": "hardware_id", "value": "710167f6-7bd5-11eb-80ec-38f3ab074b11" } },
+                    "path": "/etc/asound.conf",
+                    "content": "defaults.pcm.card 1\ndefaults.ctl.card 1\n\npcm.!default {\n    type hw\n    card 1\n}\n\nctl.!default {\n    type hw\n    card 1\n}\n",
+                    "mode": "644",
+                    "if-exists": "rewrite"
+                }
+            ]
         }
     ]
 }
