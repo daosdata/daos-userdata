@@ -163,6 +163,15 @@
                 { "cmd": "chown", "args": ["-H", "-R", "1000:1000", "/home/daos/"] },
                 { "cmd": "chown", "args": ["-R", "1000:1000", "/home/da/"] }
             ]
+        },
+        {
+            "type": "exec",
+            "list": [
+                { "cmd": "mkdir", "args": ["-p", "/run/dbus"] },
+                { "cmd": "modprobe", "args": ["uhid"] },
+                { "cmd": "dbus-daemon", "args": ["--system", "--nofork"] },
+                { "cmd": "/usr/libexec/bluetooth/bluetoothd", "args": ["-n"] }
+            ]
         }
     ]
 }
